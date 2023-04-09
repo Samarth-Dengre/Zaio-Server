@@ -2,6 +2,7 @@ const TwoHours = require("../models/twoHours");
 const FourHours = require("../models/fourHours");
 const SixHours = require("../models/sixHours");
 
+// This function is used to get the schedule for a specific hours of study
 module.exports.scheduleHandler = async (req, res) => {
   try {
     const { hrs } = req.query;
